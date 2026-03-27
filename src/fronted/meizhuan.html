@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EGO</title>
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/background.css">
+  <link rel="icon" href="img/shop.svg">
+  <link rel="stylesheet" href="css/goods-list.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html" class="logo">
+        <img src="img/shop.svg" alt="Logo" />
+        <span class="brand-name">EGO</span>
+      </a>
+    </div>
+
+    <div class="nav-wrap">
+        <div class="nav-items">
+          <div class="nav-item">
+            <span>社区精选</span><span class="arrow"></span>
+            <ul class="dropdown">
+              <li><a href="chaofu.html">潮服</a></li>
+              <li><a href="chaowan.html">潮玩</a></li>
+              <li><a href="shuma.html">数码</a></li>
+              <li><a href="meizhuan.html">美妆</a></li>
+              <li><a href="diy.html">定制</a></li>
+            </ul>
+          </div>
+          <div class="nav-item">
+            <span>全新玩法</span><span class="arrow"></span>
+            <ul class="dropdown">
+              <li><a href="index.html#new-play">AR/VR互动体验</a></li>
+              <li><a href="index.html#new-play">盲盒潮玩限量发售</a></li>
+              <li><a href="index.html#new-play">社区打卡挑战</a></li>
+              <li><a href="index.html#new-play">内容共创&联名企划</a></li>
+              <li><a href="index.html#new-play">会员等级解锁玩法</a></li>
+            </ul>
+          </div>
+          <div class="nav-item">
+            <span>服务保障</span><span class="arrow"></span>
+            <ul class="dropdown">
+              <li><a href="index.html#service">全球包邮</a></li>
+              <li><a href="index.html#service">快速发货</a></li>
+              <li><a href="index.html#service">价格透明</a></li>
+              <li><a href="index.html#service">正品保证</a></li>
+            </ul>
+          </div>
+          <div class="nav-item">
+            <span><a href="joinus.html">加入我们</a></span>
+          </div>
+        </div>
+
+      <div class="search-box">
+        <input type="text" placeholder="搜索..." />
+      </div>
+    </div>
+
+    <div class="menu-icon" style="background:url('img/导航.svg') no-repeat center center; background-size:24px;"></div>
+    <div class="search-mobile"></div>
+
+    <div class="auth">
+      <a href="#" id="nav-login">Log in</a>
+      <a href="#" class="signup" id="nav-signup">Sign up</a>
+    </div>
+  </nav>
+
+  <div id="spa-content">
+    <div id="page-home">
+      <h1></h1>
+    </div>
+    <!-- 登录 -->
+    <div id="page-login" style="display:none;">
+      <div class="auth-container">
+        <div class="close-btn">×</div>
+        <h2 class="auth-title">Log in</h2>
+        <form class="auth-form">
+          <input type="email" placeholder="EMAIL" required />
+          <input type="password" placeholder="PASSWORD" required />
+          <button type="submit" class="auth-button">Log in</button>
+        </form>
+        <div class="auth-links">
+          <a href="#">Use single sign-on</a>
+          <a href="#">Reset password</a>
+        </div>
+        <p class="auth-footer">No account? <a href="#" id="to-signup">Create one</a></p>
+      </div>
+    </div>
+    <!-- 注册 -->
+    <div id="page-signup" style="display:none;">
+      <div class="auth-container">
+        <div class="close-btn">×</div>
+        <h2 class="auth-title">Create account</h2>
+        <form class="auth-form">
+          <input type="email" placeholder="EMAIL" required />
+          <input type="password" placeholder="PASSWORD" required />
+          <button type="submit" class="auth-button">Create account</button>
+        </form>
+        <div class="auth-links">
+          <a href="#">Use single sign-on</a>
+          <a href="#">Reset password</a>
+        </div>
+        <p class="auth-footer">Already have an account? <a href="#" id="to-login">Log in</a></p>
+      </div>
+    </div>
+  </div>
+
+  <nav>
+    <ul class="nav-list">
+        <li><a href="chaofu.html">潮服</a></li>
+        <li><a href="chaowan.html">潮玩</a></li>
+        <li><a href="shuma.html">数码</a></li>
+        <li><a href="meizhuan.html" class="active">美妆</a></li>
+        <li><a href="diy.html">定制</a></li>  
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="product-grid">
+        <a href="shopping.html" class="product-item">
+            <div class="image-container">
+                <img src="img/makeup/m1.jpg" class="product-img" alt="CARHARTT T恤">
+            </div>
+            <div class="product-info">
+                <div class="brand">BOBBI BROWN 清润舒盈洁肤油 </div>
+                <div class="description">舒缓提亮保湿滋润清爽抗氧化清洁 200ml/400ml</div>
+                <div class="price">￥131</div>
+            </div>
+        </a>
+
+        <a href="shopping.html" class="product-item">
+            <div class="image-container">
+                <img src="img/makeup/m2.jpg" class="product-img" alt="骆驼POLO衫">
+            </div>
+            <div class="product-info">
+                <div class="brand">兰芝 雪纱丝柔 防晒隔离妆前乳 </div>
+                <div class="description">滋润遮瑕均匀肤色防晒修饰肤色隔离 30ml</div>
+                <div class="price">￥72</div>
+            </div>
+        </a>
+
+        <a href="shopping.html" class="product-item">
+            <div class="image-container">
+                <img src="img/makeup/m3.jpg" class="product-img" alt="骆驼POLO衫">
+            </div>
+            <div class="product-info">
+                <div class="brand">elta md 氨基酸洗面奶泡沫洁面乳 </div>
+                <div class="description">深层清洁 收缩毛孔 祛黑头 207ml/100ml</div>
+                <div class="price">￥58</div>
+            </div>
+        </a>
+
+        <a href="shopping.html" class="product-item">
+            <div class="image-container">
+                <img src="img/makeup/m4.jpg" class="product-img" alt="骆驼POLO衫">
+            </div>
+            <div class="product-info">
+                <div class="brand">倩碧 天才黄油 卓越润肤乳液 </div>
+                <div class="description">维稳保湿滋润修护控油 125ml</div>
+                <div class="price">￥113</div>
+            </div>
+        </a>
+
+        <a href="shopping.html" class="product-item">
+            <div class="image-container">
+                <img src="img/makeup/m5.jpg" class="product-img" alt="骆驼POLO衫">
+            </div>
+            <div class="product-info">
+                <div class="brand">帕尔玛之水 蓝色地中海 桃金娘加州桂香水 木质调芳香调 </div>
+                <div class="description">淡香水EDT 香柠檬罗勒 30ml/75ml/100ml/150ml/180ml</div>
+                <div class="price">￥271</div>
+            </div>
+        </a>
+
+        <a href="shopping.html" class="product-item">
+            <div class="image-container">
+                <img src="img/makeup/m6.jpg" class="product-img" alt="骆驼POLO衫">
+            </div>
+            <div class="product-info">
+                <div class="brand">CHANEL香奈儿 可可小姐 炫光唇膏口红 </div>
+                <div class="description">奶油滋润 气色玻璃唇亮泽 3g</div>
+                <div class="price">￥229</div>
+            </div>
+        </a>
+
+        <a href="shopping.html" class="product-item">
+            <div class="image-container">
+                <img src="img/makeup/m7.jpg" class="product-img" alt="骆驼POLO衫">
+            </div>
+            <div class="product-info">
+                <div class="brand">GUCCI古驰 玫瑰金粉饼 </div>
+                <div class="description">控油持久气色提亮肤色遮瑕均匀肤色 10g</div>
+                <div class="price">￥270</div>
+            </div>
+        </a>
+
+        <a href="shopping.html" class="product-item">
+            <div class="image-container">
+                <img src="img/makeup/m8.jpg" class="product-img" alt="骆驼POLO衫">
+            </div>
+            <div class="product-info">
+                <div class="brand">BVLGARI宝格丽 绅士 绿意森林男士香水 </div>
+                <div class="description">木质香调 香水EDP 15ml/60ml/100ml/150ml</div>
+                <div class="price">￥358</div>
+            </div>
+        </a>
+
+        <a href="shopping.html" class="product-item">
+            <div class="image-container">
+                <img src="img/makeup/m9.jpg" class="product-img" alt="骆驼POLO衫">
+            </div>
+            <div class="product-info">
+                <div class="brand">BVLGARI宝格丽 海洋系列 碧蓝男士香水 </div>
+                <div class="description">木质香调水生香调芳香香调 淡香水EDT 香橙叶柑橘</div>
+                <div class="price">￥566</div>
+            </div>
+        </a>
+
+        <a href="shopping.html" class="product-item">
+            <div class="image-container">
+                <img src="img/makeup/m10.jpg" class="product-img" alt="骆驼POLO衫">
+            </div>
+            <div class="product-info">
+                <div class="brand">范思哲 绅情 云淡风轻男士淡香水 木质香调水生香调 </div>
+                <div class="description">淡香水EDT 30ml/50ml/100ml/200ml</div>
+                <div class="price">￥292</div>
+            </div>
+        </a>
+
+        <a href="shopping.html" class="product-item">
+            <div class="image-container">
+                <img src="img/makeup/m11.jpg" class="product-img" alt="骆驼POLO衫">
+            </div>
+            <div class="product-info">
+                <div class="brand">纪梵希 旧版明星四宫格散粉 </div>
+                <div class="description">皮面 持久不卡粉定妆 透亮</div>
+                <div class="price">￥319</div>
+            </div>
+        </a>
+
+        <a href="shopping.html" class="product-item">
+            <div class="image-container">
+                <img src="img/makeup/m12.jpg" class="product-img" alt="骆驼POLO衫">
+            </div>
+            <div class="product-info">
+                <div class="brand">BVLGARI宝格丽 晶彩 晶莹女士香水 木质调花香调  </div>
+                <div class="description">淡香水EDT 40ml/65ml/25ml/30ml新版/50ml新版/100ml新版</div>
+                <div class="price">￥309</div>
+            </div>
+        </a>
+    </div>
+
+    <div class="more-button">
+        <a href="shopping.html">更多...</a>
+    </div>
+</div>
+
+<div class="bottom-all">
+<div class="bottom">
+  <ul>
+      <li>
+          <dl>
+              <dt>购物指南</dt>
+              <dd><a href="#">购物流程</a></dd>
+              <dd><a href="#">常见问题</a></dd>
+              <dd><a href="#">会员制度</a></dd>
+              <dd><a href="#">优惠活动</a></dd>
+          </dl>
+      </li>
+      <li>
+          <dl>
+              <dt>支付方式</dt>
+              <dd><a href="#">在线支付</a></dd>
+              <dd><a href="#">银行转账</a></dd>
+              <dd><a href="#">货到付款</a></dd>
+              <dd><a href="#">分期付款</a></dd>
+          </dl>
+      </li>
+      <li>
+          <dl>
+              <dt>售后服务</dt>
+              <dd><a href="#">退换政策</a></dd>
+              <dd><a href="#">保修服务</a></dd>
+              <dd><a href="#">投诉建议</a></dd>
+              <dd><a href="#">联系客服</a></dd>
+          </dl>
+      </li>
+      <li>
+          <dl>
+              <dt>配送服务</dt>
+              <dd><a href="#">运费说明</a></dd>
+              <dd><a href="#">物流查询</a></dd>
+              <dd><a href="#">自提服务</a></dd>
+              <dd><a href="#">国际配送</a></dd>
+          </dl>
+      </li>
+  </ul>
+</div>
+
+<footer class="foot">
+  <p>Copyright © 2025 Mr.H</p>
+  <p>网页版权归H所有</p>
+  <p>Just Do It.Impossible Is Nothing.</p>
+</footer>
+</div>
+  <script src="js/spa.js"></script>
+</body>
+</html>

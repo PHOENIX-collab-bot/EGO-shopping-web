@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EGO</title>
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/background.css">
+  <link rel="icon" href="img/shop.svg">
+  <link rel="stylesheet" href="css/goods-list.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html" class="logo">
+        <img src="img/shop.svg" alt="Logo" />
+        <span class="brand-name">EGO</span>
+      </a>
+    </div>
+
+    <div class="nav-wrap">
+        <div class="nav-items">
+          <div class="nav-item">
+            <span>社区精选</span><span class="arrow"></span>
+            <ul class="dropdown">
+              <li><a href="chaofu.html">潮服</a></li>
+              <li><a href="chaowan.html">潮玩</a></li>
+              <li><a href="shuma.html">数码</a></li>
+              <li><a href="meizhuan.html">美妆</a></li>
+              <li><a href="diy.html">定制</a></li>
+            </ul>
+          </div>
+          <div class="nav-item">
+            <span>全新玩法</span><span class="arrow"></span>
+            <ul class="dropdown">
+              <li><a href="index.html#new-play">AR/VR互动体验</a></li>
+              <li><a href="index.html#new-play">盲盒潮玩限量发售</a></li>
+              <li><a href="index.html#new-play">社区打卡挑战</a></li>
+              <li><a href="index.html#new-play">内容共创&联名企划</a></li>
+              <li><a href="index.html#new-play">会员等级解锁玩法</a></li>
+            </ul>
+          </div>
+          <div class="nav-item">
+            <span>服务保障</span><span class="arrow"></span>
+            <ul class="dropdown">
+              <li><a href="index.html#service">全球包邮</a></li>
+              <li><a href="index.html#service">快速发货</a></li>
+              <li><a href="index.html#service">价格透明</a></li>
+              <li><a href="index.html#service">正品保证</a></li>
+            </ul>
+          </div>
+          <div class="nav-item">
+            <span><a href="joinus.html">加入我们</a></span>
+          </div>
+        </div>
+
+      <div class="search-box">
+        <input type="text" placeholder="搜索..." />
+      </div>
+    </div>
+
+    <div class="menu-icon" style="background:url('img/导航.svg') no-repeat center center; background-size:24px;"></div>
+    <div class="search-mobile"></div>
+
+    <div class="auth">
+      <a href="#" id="nav-login">Log in</a>
+      <a href="#" class="signup" id="nav-signup">Sign up</a>
+    </div>
+  </nav>
+  <div id="spa-content">
+    <div id="page-home">
+      <h1></h1>
+    </div>
+    <!-- 登录 -->
+    <div id="page-login" style="display:none;">
+      <div class="auth-container">
+        <div class="close-btn">×</div>
+        <h2 class="auth-title">Log in</h2>
+        <form class="auth-form">
+          <input type="email" placeholder="EMAIL" required />
+          <input type="password" placeholder="PASSWORD" required />
+          <button type="submit" class="auth-button">Log in</button>
+        </form>
+        <div class="auth-links">
+          <a href="#">Use single sign-on</a>
+          <a href="#">Reset password</a>
+        </div>
+        <p class="auth-footer">No account? <a href="#" id="to-signup">Create one</a></p>
+      </div>
+    </div>
+    <!-- 注册 -->
+    <div id="page-signup" style="display:none;">
+      <div class="auth-container">
+        <div class="close-btn">×</div>
+        <h2 class="auth-title">Create account</h2>
+        <form class="auth-form">
+          <input type="email" placeholder="EMAIL" required />
+          <input type="password" placeholder="PASSWORD" required />
+          <button type="submit" class="auth-button">Create account</button>
+        </form>
+        <div class="auth-links">
+          <a href="#">Use single sign-on</a>
+          <a href="#">Reset password</a>
+        </div>
+        <p class="auth-footer">Already have an account? <a href="#" id="to-login">Log in</a></p>
+      </div>
+    </div>
+  </div>
+
+  <nav>
+    <ul class="nav-list">
+        <li><a href="chaofu.html">潮服</a></li>
+        <li><a href="chaowan.html">潮玩</a></li>
+        <li><a href="shuma.html" class="active">数码</a></li>
+        <li><a href="meizhuan.html">美妆</a></li>
+        <li><a href="diy.html">定制</a></li>  
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="product-grid">
+        <a href="shopping.html" class="product-item">
+            <div class="image-container">
+                <img src="img/digit/d1.jpg" class="product-img" alt="CARHARTT T恤">
+            </div>
+            <div class="product-info">
+                <div class="brand">FUJIFILM富士 拍立得 </div>
+                <div class="description">INSTAX MINI 99 一次成像</div>
+                <div class="price">￥1409</div>
+            </div>
+        </a>
+
+        <a href="shopping.html" class="product-item">
+            <div class="image-container">
+                <img src="img/digit/d2.jpg" class="product-img" alt="CARHARTT T恤">
+            </div>
+            <div class="product-info">
+                <div class="brand">vivo TWS 4 Hi-Fi版 全链路至臻 </div>
+                <div class="description">Hi-Fi 55dB 深海降噪 入耳式 真无线耳机</div>
+                <div class="price">￥368</div>
+            </div>
+        </a>
+
+        <a href="shopping.html" class="product-item">
+            <div class="image-container">
+                <img src="img/digit/d3.jpg" class="product-img" alt="CARHARTT T恤">
+            </div>
+            <div class="product-info">
+                <div class="brand">华为HUAWEI FreeLace Pro 2 </div>
+                <div class="description">颈挂式 主动降噪 无线蓝牙耳机</div>
+                <div class="price">￥263</div>
+            </div>
+        </a>
+
+        <a href="shopping.html" class="product-item">
+            <div class="image-container">
+                <img src="img/digit/d4.jpg" class="product-img" alt="CARHARTT T恤">
+            </div>
+            <div class="product-info">
+                <div class="brand">闪魔 防摔防磨防指纹高清  </div>
+                <div class="description">无尘舱青春版保护膜 钢化膜</div>
+                <div class="price">￥20</div>
+            </div>
+        </a>
+
+        <a href="shopping.html" class="product-item">
+            <div class="image-container">
+                <img src="img/digit/d5.jpg" class="product-img" alt="CARHARTT T恤">
+            </div>
+            <div class="product-info">
+                <div class="brand">漫步者Edifier G2 Pro C-Media旗舰芯片电竞游戏耳机 </div>
+                <div class="description">Hi-Res金标认证 AI智能通话降噪 高颜值 头戴式 有线耳机</div>
+                <div class="price">￥368</div>
+            </div>
+        </a>
+
+        <a href="shopping.html" class="product-item">
+            <div class="image-container">
+                <img src="img/digit/d6.jpg" class="product-img" alt="CARHARTT T恤">
+            </div>
+            <div class="product-info">
+                <div class="brand">HP惠普 GK100S 青轴茶轴 键盘</div>
+                <div class="description">电竞机械有线版 游戏工作双模式调节 20种炫光 情侣款 黑莓侧刻</div>
+                <div class="price">￥119</div>
+            </div>
+        </a>
+
+        <a href="shopping.html" class="product-item">
+            <div class="image-container">
+                <img src="img/digit/d7.jpg" class="product-img" alt="CARHARTT T恤">
+            </div>
+            <div class="product-info">
+                <div class="brand">Razer雷蛇 毒蝰V3专业版pro鼠标</div>
+                <div class="description">无线连接连接 8K 电竞游戏轻量化鼠标 类肤材质 吃鸡/LOL</div>
+                <div class="price">￥1059</div>
+            </div>
+        </a>
+
+        <a href="shopping.html" class="product-item">
+            <div class="image-container">
+                <img src="img/digit/d8.jpg" class="product-img" alt="CARHARTT T恤">
+            </div>
+            <div class="product-info">
+                <div class="brand">小米 自带线充电宝 </div>
+                <div class="description">20000mAh 33W 移动电源</div>
+                <div class="price">￥127</div>
+            </div>
+        </a>
+
+        <a href="shopping.html" class="product-item">
+            <div class="image-container">
+                <img src="img/digit/d9.jpg" class="product-img" alt="CARHARTT T恤">
+            </div>
+            <div class="product-info">
+                <div class="brand">MARVEL漫威 ZC16 运动游戏电竞耳机</div>
+                <div class="description">高颜值 长续航 低延迟 适用于苹果安卓 真无线 被动降噪 半入耳式</div>
+                <div class="price">￥79</div>
+            </div>
+        </a>
+
+        <a href="shopping.html" class="product-item">
+            <div class="image-container">
+                <img src="img/digit/d10.jpg" class="product-img" alt="CARHARTT T恤">
+            </div>
+            <div class="product-info">
+                <div class="brand">臻火 电竞鼠标垫 渡 </div>
+                <div class="description">FPS游戏专用超大号垫</div>
+                <div class="price">￥129</div>
+            </div>
+        </a>
+
+        <a href="shopping.html" class="product-item">
+            <div class="image-container">
+                <img src="img/digit/d11.jpg" class="product-img" alt="CARHARTT T恤">
+            </div>
+            <div class="product-info">
+                <div class="brand">松典SONGDIAN DC403 平台数码相机 </div>
+                <div class="description">全新卡片机学生数码照相机高清高像素自拍校园旅游vlog便携式迷你卡片机</div>
+                <div class="price">￥229</div>
+            </div>
+        </a>
+
+        <a href="shopping.html" class="product-item">
+            <div class="image-container">
+                <img src="img/digit/d12.jpg" class="product-img" alt="CARHARTT T恤">
+            </div>
+            <div class="product-info">
+                <div class="brand">NOME 微单相机前后双摄6400万 </div>
+                <div class="description">自带美颜滤镜 CCD 补光灯5K视频录制 16倍变焦自带闪光灯 vlog记录</div>
+                <div class="price">￥216</div>
+            </div>
+        </a>
+    </div>
+
+    <div class="more-button">
+        <a href="shopping.html">更多...</a>
+    </div>
+</div>
+
+<div class="bottom-all">
+<div class="bottom">
+  <ul>
+      <li>
+          <dl>
+              <dt>购物指南</dt>
+              <dd><a href="#">购物流程</a></dd>
+              <dd><a href="#">常见问题</a></dd>
+              <dd><a href="#">会员制度</a></dd>
+              <dd><a href="#">优惠活动</a></dd>
+          </dl>
+      </li>
+      <li>
+          <dl>
+              <dt>支付方式</dt>
+              <dd><a href="#">在线支付</a></dd>
+              <dd><a href="#">银行转账</a></dd>
+              <dd><a href="#">货到付款</a></dd>
+              <dd><a href="#">分期付款</a></dd>
+          </dl>
+      </li>
+      <li>
+          <dl>
+              <dt>售后服务</dt>
+              <dd><a href="#">退换政策</a></dd>
+              <dd><a href="#">保修服务</a></dd>
+              <dd><a href="#">投诉建议</a></dd>
+              <dd><a href="#">联系客服</a></dd>
+          </dl>
+      </li>
+      <li>
+          <dl>
+              <dt>配送服务</dt>
+              <dd><a href="#">运费说明</a></dd>
+              <dd><a href="#">物流查询</a></dd>
+              <dd><a href="#">自提服务</a></dd>
+              <dd><a href="#">国际配送</a></dd>
+          </dl>
+      </li>
+  </ul>
+</div>
+
+<footer class="foot">
+  <p>Copyright © 2025 Mr.H</p>
+  <p>网页版权归H所有</p>
+  <p>Just Do It.Impossible Is Nothing.</p>
+</footer>
+</div>
+  <script src="js/spa.js"></script>
+</body>
+</html>

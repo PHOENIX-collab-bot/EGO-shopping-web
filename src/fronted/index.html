@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EGO</title>
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/background.css">
+  <link rel="icon" href="img/shop.svg">
+  <style>
+    .empty{height: 240px;width: auto;}
+  </style>
+</head>
+<body>
+
+  <div class="bg-gradient-overlay"></div>
+
+  <nav class="navbar">
+
+    <div class="logo">
+      <a href="#" class="logo">
+        <img src="img/shop.svg" alt="Logo" />
+        <span class="brand-name">EGO</span>
+      </a>
+    </div>
+
+    <div class="nav-wrap">
+      <!-- 中间菜单 -->
+      <div class="nav-items">
+        <div class="nav-item">
+          <span>社区精选</span><span class="arrow"></span>
+          <ul class="dropdown">
+            <li><a href="chaofu.html">潮服</a></li>
+            <li><a href="chaowan.html">潮玩</a></li>
+            <li><a href="shuma.html">数码</a></li>
+            <li><a href="meizhuan.html">美妆</a></li>
+            <li><a href="diy.html">定制</a></li>
+          </ul>
+        </div>
+        <div class="nav-item">
+          <span>全新玩法</span><span class="arrow"></span>
+          <ul class="dropdown">
+            <li><a href="#new-play">AR/VR互动体验</a></li>
+            <li><a href="#new-play">盲盒潮玩限量发售</a></li>
+            <li><a href="#new-play">社区打卡挑战</a></li>
+            <li><a href="#new-play">内容共创&联名企划</a></li>
+            <li><a href="#new-play">会员等级解锁玩法</a></li>
+          </ul>
+        </div>
+        <div class="nav-item">
+          <span>服务保障</span><span class="arrow"></span>
+          <ul class="dropdown">
+            <li><a href="#service">全球包邮</a></li>
+            <li><a href="#service">快速发货</a></li>
+            <li><a href="#service">价格透明</a></li>
+            <li><a href="#service">正品保证</a></li>
+          </ul>
+        </div>
+        <div class="nav-item">
+          <span><a href="joinus.html">加入我们</a></span>
+        </div>
+      </div>
+
+      <!-- 搜索框 -->
+      <div class="search-box">
+        <input type="text" placeholder="搜索..." />
+      </div>
+    </div>
+
+    <!-- 解决页面缩放问题 -->
+    <div class="menu-icon" style="background:url('img/nav.svg') no-repeat center center; background-size:24px;"></div>
+    <div class="search-mobile"></div>
+
+    <!-- Log in / Sign up -->
+    <div class="auth">
+      <a href="#" id="nav-login">Log in</a>
+      <a href="#" class="signup" id="nav-signup">Sign up</a>
+    </div>
+  </nav>
+
+  <section id="hero" class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1 class="ego-title">EGO,做自我</h1>
+        <p class="ego-sub">适合小众、个性、潮流、极客人士的购物网站…</p>
+      </div>
+      <div class="hero-img">
+        <div class="hero-carousel">
+             <button class="carousel-btn prev">&lt;</button>
+             <div class="carousel-track">
+              <img src="img/ego4.jpg" alt="EGO 4">
+              <img src="img/ego1.jpg" alt="EGO 1">
+              <img src="img/ego6.jpg" alt="EGO 6">
+              <img src="img/ego3.jpg" alt="EGO 3">
+              <img src="img/ego5.jpg" alt="EGO 5">               
+             </div>
+             <button class="carousel-btn next">&gt;</button>
+           </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- SPA 内容 -->
+  <div id="spa-content">
+    <!-- 首页 -->
+    <div id="page-home">
+      <h1></h1>
+    </div>
+    <!-- 登录 -->
+    <div id="page-login" style="display:none;">
+      <div class="auth-container">
+        <div class="close-btn">×</div>
+        <h2 class="auth-title">Log in</h2>
+        <form class="auth-form">
+          <input type="email" placeholder="EMAIL" required />
+          <input type="password" placeholder="PASSWORD" required />
+          <button type="submit" class="auth-button">Log in</button>
+        </form>
+        <div class="auth-links">
+          <a href="#">Use single sign-on</a>
+          <a href="#">Reset password</a>
+        </div>
+        <p class="auth-footer">No account? <a href="#" id="to-signup">Create one</a></p>
+      </div>
+    </div>
+    <!-- 注册 -->
+    <div id="page-signup" style="display:none;">
+      <div class="auth-container">
+        <div class="close-btn">×</div>
+        <h2 class="auth-title">Create account</h2>
+        <form class="auth-form">
+          <input type="email" placeholder="EMAIL" required />
+          <input type="password" placeholder="PASSWORD" required />
+          <button type="submit" class="auth-button">Create account</button>
+        </form>
+        <div class="auth-links">
+          <a href="#">Use single sign-on</a>
+          <a href="#">Reset password</a>
+        </div>
+        <p class="auth-footer">Already have an account? <a href="#" id="to-login">Log in</a></p>
+      </div>
+    </div>
+  </div>
+
+<section class="play-section">
+<h2 class="play-title">社区精选</h2>
+<div class="gallery">
+  <div class="gallery-container">
+      <a href="chaofu.html"><img src="img/chaofu.jpg" alt="潮服"></a>
+      <div class="card-caption">
+          <h3>潮服</h3>
+          <p>先锋设计/限量发售</p>
+      </div>
+  </div>
+  <div class="gallery-container">
+      <a href="chaowan.html"><img src="img/chaowan.png" alt="潮玩"></a>
+      <div class="card-caption">
+          <h3>潮玩</h3>
+          <p>收藏级/艺术家联名</p>
+      </div>
+  </div>
+  <div class="gallery-container">
+      <a href="shuma.html"><img src="img/shuma.jpg" alt="数码"></a>
+      <div class="card-caption">
+          <h3>数码</h3>
+          <p>极客装备/新品首发</p>
+      </div>
+  </div>
+  <div class="gallery-container">
+      <a href="meizhuan.html"><img src="img/meizhuang.jpg" alt="美妆"></a>
+      <div class="card-caption">
+          <h3>美妆</h3>
+          <p>小众品牌/成分党优选</p>
+      </div>
+  </div>
+  <div class="gallery-container">
+      <a href="diy.html"><img src="img/diy.jpg" alt="DIY"></a>
+      <div class="card-caption">
+          <h3>定制</h3>
+          <p>创意工坊/材料包</p>
+      </div>
+  </div>
+</div>
+</section>
+
+<div class="empty"></div>
+
+
+<section class="play-section2" id="new-play">
+  <h2 class="play-title2">全新的玩法</h2>
+  <div class="play-item" data-open="false">
+    <div class="item-header">
+      <img src="img/AR-Try-on.jpg" alt="AR/VR互动" />
+      <h3>AR/VR互动体验</h3>
+    </div>
+    <div class="item-content">
+      <p>用手机 AR 一键试装、试妆，或进入沉浸式 VR 展厅，身临其境逛街，边逛边晒，分享你的潮流态度！</p>
+    </div>
+    <div class="item-footer">
+      <button>了解更多</button>
+    </div>
+  </div>
+  <div class="play-item" data-open="false">
+    <div class="item-header">
+      <img src="img/chaowan.jpg" alt="盲盒潮玩" />
+      <h3>盲盒潮玩限量发售</h3>
+    </div>
+    <div class="item-content">
+      <p>限量联名盲盒，随机隐藏超值福利，拆开就有惊喜，邀请好友一起开箱，冲浪潮玩社群！</p>
+    </div>
+    <div class="item-footer">
+      <button>立即开盒</button>
+    </div>
+  </div>
+  <div class="play-item" data-open="false">
+    <div class="item-header">
+      <img src="img/daka.jpg" alt="打卡挑战" />
+      <h3>社区打卡挑战</h3>
+    </div>
+    <div class="item-content">
+      <p>#二十一天搭配挑战，上传你的独家穿搭心得，赢取积分、限量勋章以及专属福利礼包。</p>
+    </div>
+    <div class="item-footer">
+      <button>参加挑战</button>
+    </div>
+  </div>
+  <div class="play-item" data-open="false">
+    <div class="item-header">
+      <img src="img/lianming.jpg" alt="共创联名" />
+      <h3>内容共创 & 联名企划</h3>
+    </div>
+    <div class="item-content">
+      <p>与顶级 KOL 及潮牌艺术家一起共创，用户投票决定设计，上架即热卖，限量抢购！</p>
+    </div>
+    <div class="item-footer">
+      <button>立即投票</button>
+    </div>
+  </div>
+  <div class="play-item" data-open="false">
+    <div class="item-header">
+      <img src="img/dengji.jpg" alt="会员解锁" />
+      <h3>会员等级解锁玩法</h3>
+    </div>
+    <div class="item-content">
+      <p>青铜→钻石四档等级体系，解锁专属表情包、新品内测、VIP 客服和神秘礼盒！</p>
+    </div>
+    <div class="item-footer">
+      <button>查看特权</button>
+    </div>
+  </div>
+</section>
+
+<div class="empty"></div>
+
+<h2 id="service">服务保障</h2>
+<section class="sec">
+  <div class="part1 pt">
+    <div class="imghid"><div class="img"></div></div>
+    <div class="text">
+      <h1>全球包邮</h1>
+      <p>&nbsp;凡在本店购物，均享全国包邮服务，让您足不出户，轻松收货</p>
+    </div>
+  </div>
+
+  <div class="part2 pt">
+    <div class="text">
+      <h1>快速发货</h1>
+      <p>&nbsp;订单确认后24小时内发货，库存直达，时效可查</p>
+    </div>
+    <div class="imghid"><div class="img"></div></div>
+  </div>
+
+  <div class="part3 pt">
+    <div class="imghid"><div class="img"></div></div>
+    <div class="text">
+      <h1>价格透明</h1>
+      <p>&nbsp;所有商品标明最终到手价，无隐性费用，放心选购</p>
+    </div>
+  </div>
+
+  <div class="part4 pt">
+    <div class="text">
+      <h1>正品保证</h1>
+      <p>&nbsp;与品牌授权商合作，层层质检，假一罚十</p>
+    </div>
+    <div class="imghid"><div class="img"></div></div>
+  </div>
+</section>
+
+<div class="empty"></div>
+
+<div class="bottom-all">
+<div class="bottom">
+  <ul>
+      <li>
+          <dl>
+              <dt>购物指南</dt>
+              <dd><a href="#">购物流程</a></dd>
+              <dd><a href="#">常见问题</a></dd>
+              <dd><a href="#">会员制度</a></dd>
+              <dd><a href="#">优惠活动</a></dd>
+          </dl>
+      </li>
+      <li>
+          <dl>
+              <dt>支付方式</dt>
+              <dd><a href="#">在线支付</a></dd>
+              <dd><a href="#">银行转账</a></dd>
+              <dd><a href="#">货到付款</a></dd>
+              <dd><a href="#">分期付款</a></dd>
+          </dl>
+      </li>
+      <li>
+          <dl>
+              <dt>售后服务</dt>
+              <dd><a href="#">退换政策</a></dd>
+              <dd><a href="#">保修服务</a></dd>
+              <dd><a href="#">投诉建议</a></dd>
+              <dd><a href="#">联系客服</a></dd>
+          </dl>
+      </li>
+      <li>
+          <dl>
+              <dt>配送服务</dt>
+              <dd><a href="#">运费说明</a></dd>
+              <dd><a href="#">物流查询</a></dd>
+              <dd><a href="#">自提服务</a></dd>
+              <dd><a href="#">国际配送</a></dd>
+          </dl>
+      </li>
+  </ul>
+</div>
+
+<footer class="foot">
+  <p>Copyright © 2025 Mr.H</p>
+  <p>网页版权归H所有</p>
+  <p>Just Do It.Impossible Is Nothing.</p>
+</footer>
+</div>
+  <script src="js/spa.js"></script>
+</body>
+</html>

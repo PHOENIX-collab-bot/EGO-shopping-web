@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EGO</title>
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="icon" href="img/shop.svg">
+  <link rel="stylesheet" href="css/diy.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html" class="logo">
+        <img src="img/shop.svg" alt="Logo" />
+        <span class="brand-name">EGO</span>
+      </a>
+    </div>
+
+    <div class="nav-wrap">
+        <div class="nav-items">
+          <div class="nav-item">
+            <span>社区精选</span><span class="arrow"></span>
+            <ul class="dropdown">
+              <li><a href="chaofu.html">潮服</a></li>
+              <li><a href="chaowan.html">潮玩</a></li>
+              <li><a href="shuma.html">数码</a></li>
+              <li><a href="meizhuan.html">美妆</a></li>
+              <li><a href="diy.html">定制</a></li>
+            </ul>
+          </div>
+          <div class="nav-item">
+            <span>全新玩法</span><span class="arrow"></span>
+            <ul class="dropdown">
+              <li><a href="index.html#new-play">AR/VR互动体验</a></li>
+              <li><a href="index.html#new-play">盲盒潮玩限量发售</a></li>
+              <li><a href="index.html#new-play">社区打卡挑战</a></li>
+              <li><a href="index.html#new-play">内容共创&联名企划</a></li>
+              <li><a href="index.html#new-play">会员等级解锁玩法</a></li>
+            </ul>
+          </div>
+          <div class="nav-item">
+            <span>服务保障</span><span class="arrow"></span>
+            <ul class="dropdown">
+              <li><a href="index.html#service">全球包邮</a></li>
+              <li><a href="index.html#service">快速发货</a></li>
+              <li><a href="index.html#service">价格透明</a></li>
+              <li><a href="index.html#service">正品保证</a></li>
+            </ul>
+          </div>
+          <div class="nav-item">
+            <span><a href="joinus.html">加入我们</a></span>
+          </div>
+        </div>
+
+      <div class="search-box">
+        <input type="text" placeholder="搜索..." />
+      </div>
+    </div>
+
+    <div class="menu-icon" style="background:url('img/导航.svg') no-repeat center center; background-size:24px;"></div>
+    <div class="search-mobile"></div>
+
+    <div class="auth">
+      <a href="#" id="nav-login">Log in</a>
+      <a href="#" class="signup" id="nav-signup">Sign up</a>
+    </div>
+  </nav>
+  <div id="spa-content">
+    <div id="page-home">
+      <h1></h1>
+    </div>
+    <!-- 登录 -->
+    <div id="page-login" style="display:none;">
+      <div class="auth-container">
+        <div class="close-btn">×</div>
+        <h2 class="auth-title">Log in</h2>
+        <form class="auth-form">
+          <input type="email" placeholder="EMAIL" required />
+          <input type="password" placeholder="PASSWORD" required />
+          <button type="submit" class="auth-button">Log in</button>
+        </form>
+        <div class="auth-links">
+          <a href="#">Use single sign-on</a>
+          <a href="#">Reset password</a>
+        </div>
+        <p class="auth-footer">No account? <a href="#" id="to-signup">Create one</a></p>
+      </div>
+    </div>
+    <!-- 注册 -->
+    <div id="page-signup" style="display:none;">
+      <div class="auth-container">
+        <div class="close-btn">×</div>
+        <h2 class="auth-title">Create account</h2>
+        <form class="auth-form">
+          <input type="email" placeholder="EMAIL" required />
+          <input type="password" placeholder="PASSWORD" required />
+          <button type="submit" class="auth-button">Create account</button>
+        </form>
+        <div class="auth-links">
+          <a href="#">Use single sign-on</a>
+          <a href="#">Reset password</a>
+        </div>
+        <p class="auth-footer">Already have an account? <a href="#" id="to-login">Log in</a></p>
+      </div>
+    </div>
+  </div>
+
+  <nav>
+    <ul class="nav-list">
+        <li><a href="chaofu.html">潮服</a></li>
+        <li><a href="chaowan.html">潮玩</a></li>
+        <li><a href="shuma.html">数码</a></li>
+        <li><a href="meizhuan.html">美妆</a></li>
+        <li><a href="diy.html" class="active">定制</a></li>
+    </ul>
+</nav>
+
+<section class="diy-hero">
+    <h1>DIY 个性定制</h1>
+    <p>上传你的创意图案，定制专属 T 恤、帽子，让潮流更有你的风格。</p>
+  </section>
+
+  <section class="diy-section">
+    <div class="upload-area">
+      <h2>上传你的设计</h2>
+      <label class="upload-label" for="upload-input">选择图片</label>
+      <input type="file" id="upload-input" accept="image/*">
+    </div>
+
+    <button class="start-button">开始制作</button>
+  </section>
+
+  <section class="diy-section">
+    <h2 style="text-align:center; font-size:28px; margin-bottom:20px;">精选 T 恤模板</h2>
+    <div class="template-grid">
+      <div class="template-item">
+        <img src="img/diy/diy1.png" alt="模板1">
+        <div class="template-caption">极简设计</div>
+      </div>
+      <div class="template-item">
+        <img src="img/diy/diy2.png" alt="模板2">
+        <div class="template-caption">文字寓意</div>
+      </div>
+      <div class="template-item">
+        <img src="img/diy/diy3.png" alt="模板3">
+        <div class="template-caption">潮酷涂鸦</div>
+      </div>
+      <div class="template-item">
+        <img src="img/diy/diy4.png" alt="模板4">
+        <div class="template-caption">街头风格</div>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    document.getElementById('upload-input').addEventListener('change', function(e) {
+      const fileName = e.target.files[0]?.name;
+      if (fileName) {
+        alert(`已上传: ${fileName}`);
+      }
+    });
+  </script>
+<div class="bottom-all">
+<div class="bottom">
+  <ul>
+      <li>
+          <dl>
+              <dt>购物指南</dt>
+              <dd><a href="#">购物流程</a></dd>
+              <dd><a href="#">常见问题</a></dd>
+              <dd><a href="#">会员制度</a></dd>
+              <dd><a href="#">优惠活动</a></dd>
+          </dl>
+      </li>
+      <li>
+          <dl>
+              <dt>支付方式</dt>
+              <dd><a href="#">在线支付</a></dd>
+              <dd><a href="#">银行转账</a></dd>
+              <dd><a href="#">货到付款</a></dd>
+              <dd><a href="#">分期付款</a></dd>
+          </dl>
+      </li>
+      <li>
+          <dl>
+              <dt>售后服务</dt>
+              <dd><a href="#">退换政策</a></dd>
+              <dd><a href="#">保修服务</a></dd>
+              <dd><a href="#">投诉建议</a></dd>
+              <dd><a href="#">联系客服</a></dd>
+          </dl>
+      </li>
+      <li>
+          <dl>
+              <dt>配送服务</dt>
+              <dd><a href="#">运费说明</a></dd>
+              <dd><a href="#">物流查询</a></dd>
+              <dd><a href="#">自提服务</a></dd>
+              <dd><a href="#">国际配送</a></dd>
+          </dl>
+      </li>
+  </ul>
+</div>
+
+<footer class="foot">
+  <p>Copyright © 2025 Mr.H</p>
+  <p>网页版权归H所有</p>
+  <p>Just Do It.Impossible Is Nothing.</p>
+</footer>
+</div>
+  <script src="js/spa.js"></script>
+</body>
+</html>

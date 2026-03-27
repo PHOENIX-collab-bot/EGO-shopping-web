@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EGO</title>
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/background.css">
+  <link rel="icon" href="img/shop.svg">
+  <link rel="stylesheet" href="css/shopping.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html" class="logo">
+        <img src="img/shop.svg" alt="Logo" />
+        <span class="brand-name">EGO</span>
+      </a>
+    </div>
+
+    <div class="nav-wrap">
+        <div class="nav-items">
+          <div class="nav-item">
+            <span>社区精选</span><span class="arrow"></span>
+            <ul class="dropdown">
+              <li><a href="chaofu.html">潮服</a></li>
+              <li><a href="chaowan.html">潮玩</a></li>
+              <li><a href="shuma.html">数码</a></li>
+              <li><a href="meizhuan.html">美妆</a></li>
+              <li><a href="diy.html">定制</a></li>
+            </ul>
+          </div>
+          <div class="nav-item">
+            <span>全新玩法</span><span class="arrow"></span>
+            <ul class="dropdown">
+              <li><a href="index.html#new-play">AR/VR互动体验</a></li>
+              <li><a href="index.html#new-play">盲盒潮玩限量发售</a></li>
+              <li><a href="index.html#new-play">社区打卡挑战</a></li>
+              <li><a href="index.html#new-play">内容共创&联名企划</a></li>
+              <li><a href="index.html#new-play">会员等级解锁玩法</a></li>
+            </ul>
+          </div>
+          <div class="nav-item">
+            <span>服务保障</span><span class="arrow"></span>
+            <ul class="dropdown">
+              <li><a href="index.html#service">全球包邮</a></li>
+              <li><a href="index.html#service">快速发货</a></li>
+              <li><a href="index.html#service">价格透明</a></li>
+              <li><a href="index.html#service">正品保证</a></li>
+            </ul>
+          </div>
+          <div class="nav-item">
+            <span><a href="joinus.html">加入我们</a></span>
+          </div>
+        </div>
+      <div class="search-box">
+        <input type="text" placeholder="搜索..." />
+      </div>
+    </div>
+
+    <div class="menu-icon" style="background:url('img/导航.svg') no-repeat center center; background-size:24px;"></div>
+    <div class="search-mobile"></div>
+
+    <div class="auth">
+      <a href="#" id="nav-login">Log in</a>
+      <a href="#" class="signup" id="nav-signup">Sign up</a>
+    </div>
+  </nav>
+
+  <div id="spa-content">
+    <div id="page-home">
+      <h1></h1>
+    </div>
+    <!-- 登录 -->
+    <div id="page-login" style="display:none;">
+      <div class="auth-container">
+        <div class="close-btn">×</div>
+        <h2 class="auth-title">Log in</h2>
+        <form class="auth-form">
+          <input type="email" placeholder="EMAIL" required />
+          <input type="password" placeholder="PASSWORD" required />
+          <button type="submit" class="auth-button">Log in</button>
+        </form>
+        <div class="auth-links">
+          <a href="#">Use single sign-on</a>
+          <a href="#">Reset password</a>
+        </div>
+        <p class="auth-footer">No account? <a href="#" id="to-signup">Create one</a></p>
+      </div>
+    </div>
+    <!-- 注册 -->
+    <div id="page-signup" style="display:none;">
+      <div class="auth-container">
+        <div class="close-btn">×</div>
+        <h2 class="auth-title">Create account</h2>
+        <form class="auth-form">
+          <input type="email" placeholder="EMAIL" required />
+          <input type="password" placeholder="PASSWORD" required />
+          <button type="submit" class="auth-button">Create account</button>
+        </form>
+        <div class="auth-links">
+          <a href="#">Use single sign-on</a>
+          <a href="#">Reset password</a>
+        </div>
+        <p class="auth-footer">Already have an account? <a href="#" id="to-login">Log in</a></p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container">
+    <!-- 左栏 -->
+    <div class="left-column">
+      <div class="main-image">
+        <img src="img/qnxeey.jpg" alt="主图" style="width:100%">
+        <div class="thumbnail-list">
+          <img class="thumbnail active" src="img/suo1.jpg">
+          <img class="thumbnail" src="img/suo2.jpg">
+          <img class="thumbnail" src="img/suo3.jpg">
+          <img class="thumbnail" src="img/suo4.jpg">
+        </div>
+      </div>
+  
+      <div class="detail-description">
+        <h3>设计亮点</h3>
+        <p>结合哥特风玫瑰图腾与复古水洗元素，独家印花搭配光变材质，穿着后呈现微光流动质感，打造视觉冲击力与个性表达。</p>
+  
+        <h3>穿搭建议</h3>
+        <p>搭配工装短裤或复古牛仔裤、棒球帽及墨镜，可打造Unisex街头风穿搭，适合春夏通勤或聚会出街。</p>
+      </div>
+  
+      <div class="specs">
+        <h3>商品参数</h3>
+        <ul>
+          <li><strong>面料：</strong> 100%纯棉，水洗处理</li>
+          <li><strong>版型：</strong> 美式复古宽松</li>
+          <li><strong>领口：</strong> 经典圆领</li>
+        </ul>
+      </div>
+  
+      <div class="recent-purchase">
+        <h3>最近购买动态</h3>
+        <ul class="purchase-list">
+          <li>水洗黑 <b>L</b> - 26分钟前</li>
+          <li>麒麟白色 <b>M</b> - 30分钟前</li>
+          <li>纯棉白色 <b>M</b> - 55分钟前</li>
+        </ul>
+      </div>
+    </div>
+  
+    <!-- 右栏 -->
+    <div class="right-column">
+      <h1 class="product-title">Qnxeey 美式复古哥特剑玫瑰印花光变圆领短袖 T 恤</h1>
+  
+      <div class="product-tags">
+        <span class="tag hot">热销</span>
+        <span class="tag new">2024春夏上新</span>
+        <span class="tag trend">潮流单品</span>
+      </div>
+  
+      <div class="price-section">
+        <span class="current-price">￥49 起</span>
+      </div>
+  
+      <div class="option-group">
+        <h4 class="option-title">颜色</h4>
+        <div class="color-options">
+          <div class="color-box active">水洗黑</div>
+          <div class="color-box">米色</div>
+          <div class="color-box">水洗灰</div>
+          <div class="color-box">咖色</div>
+        </div>
+      </div>
+  
+      <div class="option-group">
+        <h4 class="option-title">尺码</h4>
+        <div class="size-options">
+          <div class="size-box">S</div>
+          <div class="size-box">M</div>
+          <div class="size-box">L</div>
+          <div class="size-box">XL</div>
+          <div class="size-box">2XL</div>
+          <div class="size-box">3XL</div>
+        </div>
+      </div>
+  
+      <div class="buy-actions">
+        <button class="primary-btn">立即购买</button>
+        <button class="secondary-btn">加入心愿单</button>
+      </div>
+  
+      <div class="rating-section">
+        <p>用户评分：⭐ 4.9 / 5.0（328人评价）</p>
+      </div>
+  
+      <div class="service-guarantee">
+        <div class="brand-banner">官方正品 · 每件可追溯 · 潮流保障</div><br>
+        <div class="service-items">
+          <div>正品险 ✓</div>
+          <div>7天无理由退货 ✓</div>
+          <div>退货包运费 ✓</div>
+          <div>晚到必赔 ✓</div>
+          <div>全场包邮 ✓</div>
+          <div>逐件查验 ✓</div>
+        </div>
+        <div class="brand-info">
+          <h3>品牌：Qnxeey</h3>
+          <p>粉丝 2.3万+ | 上新 82件 | 潮流保证</p>
+        </div>
+      </div>
+
+      <div class="product-recommend">
+        <h3 class="recommend-title">搭配推荐</h3>
+        <div class="recommend-scroll">
+          <div class="recommend-card">
+            <div class="card-image">
+              <img src="img/clothes/right-rec1.jpg" alt="破坏水洗牛仔裤">
+              <span class="card-tag new">新品</span>
+            </div>
+            <div class="card-info">
+              <p class="card-name">Qnxeey 破坏水洗牛仔裤</p>
+              <div class="card-price">
+                <span class="price">￥299</span>
+                <button class="quick-buy">速购</button>
+              </div>
+            </div>
+          </div>
+          <div class="recommend-card">
+            <div class="card-image">
+              <img src="img/clothes/right-rec2.jpg" alt="复古跑鞋">
+              <span class="card-tag hot">爆款</span>
+            </div>
+            <div class="card-info">
+              <p class="card-name">RetroRunner 千禧跑鞋</p>
+              <div class="card-price">
+                <span class="price">￥599</span>
+                <button class="quick-buy">速购</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<script src="js/shopping.js"></script>
+
+<div class="bottom-all">
+<div class="bottom">
+  <ul>
+      <li>
+          <dl>
+              <dt>购物指南</dt>
+              <dd><a href="#">购物流程</a></dd>
+              <dd><a href="#">常见问题</a></dd>
+              <dd><a href="#">会员制度</a></dd>
+              <dd><a href="#">优惠活动</a></dd>
+          </dl>
+      </li>
+      <li>
+          <dl>
+              <dt>支付方式</dt>
+              <dd><a href="#">在线支付</a></dd>
+              <dd><a href="#">银行转账</a></dd>
+              <dd><a href="#">货到付款</a></dd>
+              <dd><a href="#">分期付款</a></dd>
+          </dl>
+      </li>
+      <li>
+          <dl>
+              <dt>售后服务</dt>
+              <dd><a href="#">退换政策</a></dd>
+              <dd><a href="#">保修服务</a></dd>
+              <dd><a href="#">投诉建议</a></dd>
+              <dd><a href="#">联系客服</a></dd>
+          </dl>
+      </li>
+      <li>
+          <dl>
+              <dt>配送服务</dt>
+              <dd><a href="#">运费说明</a></dd>
+              <dd><a href="#">物流查询</a></dd>
+              <dd><a href="#">自提服务</a></dd>
+              <dd><a href="#">国际配送</a></dd>
+          </dl>
+      </li>
+  </ul>
+</div>
+
+<footer class="foot">
+  <p>Copyright © 2025 Mr.H</p>
+  <p>网页版权归H所有</p>
+  <p>Just Do It.Impossible Is Nothing.</p>
+</footer>
+</div>
+  <script src="js/spa.js"></script>
+</body>
+</html>

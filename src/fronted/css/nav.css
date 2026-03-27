@@ -1,0 +1,244 @@
+* { box-sizing: border-box; margin: 0; padding: 0;font-size: 13px; }
+a { text-decoration: none; color: #333; }
+
+/* 顶栏 */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+  padding: 0 16px;
+  background: #fff;
+  border-bottom: 1px solid #eaeaea;
+  position: fixed;    /* 固定定位 */
+  top: 0;             /* 距顶部 0 */
+  left: 0;            /* 距左侧 0 */
+  width: 100%;        /* 宽度撑满 */
+  z-index: 1000;      /* 确保在最上层 */
+  transform: translateY(0);/*上下滑动的过渡*/
+  transition: transform 0.3s ease;
+}
+
+/* 加 hidden 类，往上偏移自身高度，滑出视口 */
+.navbar.hidden {transform: translateY(-100%);}
+
+/* 左侧 Logo */
+.navbar .logo img {height: 24px}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.brand-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  white-space: nowrap;
+}
+
+/* 中间菜单，左对齐在 logo 旁 */
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin-left: 16px;
+}
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.nav-item {
+  position: relative;
+  padding: 0 4px;
+  line-height: 48px;
+  cursor: pointer;
+}
+.nav-item span { vertical-align: middle; }
+
+@keyframes arrow-rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(180deg); }
+}
+@keyframes arrow-rotate-reverse {
+    0% { transform: rotate(180deg); }
+    100% { transform: rotate(0deg); }
+}
+.nav-item .arrow {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-left: 4px;
+  background: url("../img/arrow-up.svg") no-repeat center center;
+  background-size: contain;
+  transition: transform 0.2s ease-in-out; /* 添加平滑过渡 */
+}
+.nav-item:hover .arrow {
+    animation: arrow-rotate 0.2s ease-in-out forwards;
+}
+.nav-item:not(:hover) .arrow {
+    animation: arrow-rotate-reverse 0.2s ease-in-out forwards;
+}
+.nav-item:hover{
+  background: #f8f8f8;
+  transition: background 0.2s;
+}
+
+/* 下拉菜单 */
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  min-width: 120px;
+  z-index: 1000;
+}
+.nav-item:hover .dropdown {
+  display: block;
+}
+.dropdown li {
+  list-style: none;
+  padding: 8px 12px;
+  white-space: nowrap;
+}
+.dropdown li + li { border-top: 1px solid #f0f0f0; }
+.dropdown li:hover { background: #f5f5f5; }
+
+/* 搜索框 */
+.search-box {
+  position: relative;
+  width: 240px;
+  height: 32px;
+  margin-left: auto;
+  margin-right: 16px;
+}
+.search-box input {
+  width: 100%;
+  height: 100%;
+  padding: 0 40px 0 12px;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  outline: none;
+  transition: border-color .3s, background-image .3s;
+  background: url("../img/search.svg") no-repeat center right 12px;
+  background-size: 16px;
+}
+.search-box input:hover {
+  border-color: #989797;
+  background-image: url("../img/search-hover.svg");
+}
+.search-box input:focus {
+  border-color: #7dc5eb; /* 点击后显示品牌色 */
+  box-shadow: 0 0 0 2px rgba(125, 197, 235, 0.2); /* 可选：添加聚焦光晕效果 */
+}
+
+/* 右侧按钮 */
+.auth {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: 20px;
+}
+.auth a {
+  line-height: 32px;
+  padding: 0 12px;
+  border: 1px solid #333;
+  border-radius: 4px;
+}
+.signup { background: #333; color: #fff; }
+
+/* 网站缩放问题 */
+.menu-icon, .search-mobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  .nav-wrap, .search-box, .logo img {
+    display: none;
+  }
+  .menu-icon, .search-mobile {
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+    cursor: pointer;
+  }
+  .search-mobile {
+    background: url("../img/search.svg") no-repeat center center;
+    background-size: 20px;
+    border-radius: 50%;
+  }
+}
+
+/*signup/login  页面样式*/
+.auth-container {
+  width: 320px; margin: 40px auto; padding: 24px;
+  background: #fff; border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  position: relative;
+}
+.auth-title { font-size: 18px; margin-bottom: 24px; }
+.auth-form { display: flex; flex-direction: column; gap: 12px; }
+.auth-form input {
+  padding: 10px; font-size: 13px;
+  border: none; border-radius: 4px;
+  background: #eee;
+}
+.auth-button {
+  padding: 10px; font-size: 14px;
+  background: #000; color: #fff;
+  border: none; border-radius: 6px;
+  cursor: pointer;
+}
+.auth-button:hover { background: #111; }
+.auth-links { margin: 16px 0 8px; display: flex; flex-direction: column; gap: 4px; }
+.auth-links a, .auth-footer a { color: #0074e8; font-size: 13px; }
+.auth-footer { font-size: 13px; color: #555; }
+
+/* 关闭按钮样式 */
+.close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  font-size: 24px;
+  color: #999;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.close-btn:hover {
+  color: #5f5f5f;
+}
+
+/* —— SPA 登录/注册 弹层 —— */
+#page-login, 
+#page-signup {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  display: none;        /* 默认隐藏，由 JS 控制 */
+  justify-content: center;
+  align-items: center;
+  /* background: #ffffff; */
+  background: rgba(255,255,255,0.98);
+  backdrop-filter: blur(2px);
+  box-shadow: inset 0 0 50px rgba(0,0,0,0.05);
+  z-index: 999;
+}
+
+/* ？？？：当 JS 切换为 block（可加一个 .active 类也行）时 */
+#page-login[style*="display: block"],
+#page-signup[style*="display: block"] {
+  display: flex !important;
+}

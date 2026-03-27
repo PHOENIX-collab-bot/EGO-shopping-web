@@ -1,0 +1,540 @@
+html{
+  scroll-behavior: smooth;
+}
+
+.hero {
+    position: relative;
+    height: calc(100vh - 48px);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+  .hero-inner { position: relative; z-index: 1; width:90%; max-width:1200px; display:flex; justify-content:space-between; align-items:center; }
+  .hero-text { flex:1; color:#333; display: flex;
+    flex-direction: column;
+    align-items: center; /* 新增居中属性 */}
+  .ego-title { font-size:4rem; font-weight:700; margin-bottom:.5rem; }
+  .ego-sub { font-size:1.25rem; letter-spacing:1px; }
+  .hero-img { flex:1.5; display:flex; justify-content:flex-end; border-radius: 10px;}
+  .hero-img img { width: 400px; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.1); }
+
+
+
+
+
+  .gallery{
+    max-width: 1200px;
+    padding: 0 40px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    gap: 0.4rem;
+    transform-style: preserve-3d;
+    pointer-events: none;
+}        
+
+.gallery-container{
+    flex: 1;
+    aspect-ratio: 9/12;
+    -webkit-box-reflect: below 4px
+      linear-gradient(transparent,rgba(0,0,0,0.15));
+      transition: 0.4s;
+      pointer-events: auto;
+    
+    position: relative;
+    
+}
+
+.gallery-container img{
+    display: block;
+    width:100%;
+    aspect-ratio: 9/12;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+.gallery-container:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+
+.gallery:hover > :not(:hover){
+    margin-inline: -1.5rem;
+    transform: perspective(400px) rotateY(30deg) scale(0.8);
+}
+
+.gallery-container:hover ~.gallery-container{
+    transform: perspective(400px) rotateY(-30deg) scale(0.8);
+}
+
+
+/* 卡片描述样式 */
+.card-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  color: white;
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+  pointer-events: none; /* 防止文字阻挡悬停 */
+  border-radius: 1px;
+}
+
+.gallery-container:hover .card-caption {
+  transform: translateY(0);
+}
+
+.card-caption h3 {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.card-caption p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  line-height: 1.3;
+}
+
+.sec{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  /* padding: 50px; */
+}
+.text h1{
+  margin-top: 66px;
+}
+.pt{
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 250px;
+  float: none;
+  margin: 5px;
+  background: #fef4f6;
+  box-shadow: 0 0 8px rgb(43, 50, 62);
+  border-radius: 10px;
+  overflow: hidden;
+  scroll-snap-align: start;
+  transition: all 0.5s ease 0s;
+}
+.pt:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.imghid{
+  overflow: hidden;
+}
+.part1 .img{
+  background-image: url("../img/baoyou.jpg");
+}
+.part2 .img{
+  background-image: url("../img/fahuo.png");
+}
+.part3 .img{
+  background-image: url("../img/jiage.jpg");
+}
+.part4 .img{
+  background-image: url("../img/zhengpin.jpg");
+}
+
+.pt .img{
+  height: 190px;
+  width: 250px;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s ease 0s;
+  opacity: 0.8;
+}
+
+.pt .img:hover{
+  transform: scale(1.1);
+}
+
+.pt .text{
+  height: 310px;
+  width: 200px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  
+}
+
+.pt .text h1{
+  text-align: center;
+  font-size: 2em;
+  color: rgb(28, 44, 68);
+  height: 30px;
+  line-height: 30px;
+}
+
+.pt .text p{
+  margin-top: -2px;
+  padding-top: 10px;
+  word-wrap: break-word;
+  color: black;
+}
+
+
+.play-section {
+  margin: 0 auto 60px;
+  padding: 30px;
+  background: transparent;
+  text-align: center;
+}
+.play-title {
+  font-size: 2em;
+  margin-bottom: 40px;
+  color: #1c2c44;
+}
+.play-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.card {
+  position: relative;
+  width: 200px;
+  height: 260px;
+  perspective: 800px;
+  cursor: pointer;
+}
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.6s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.card-front {
+  background: #f5f9ff;
+}
+.card-front img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+.card-front h3 {
+  font-size: 18px;
+  color: #1c2c44;
+}
+.card-back {
+  background: #1c2c44;
+  color: #fff;
+  transform: rotateY(180deg);
+}
+.card-back p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+.card.flipped .card-front {
+  transform: rotateY(180deg);
+}
+.card.flipped .card-back {
+  transform: rotateY(360deg);
+}
+
+
+/*主页底部*/
+.bottom-all {
+  width: 100%;
+  background: #000000;
+}
+.bottom{
+  background-color: transparent;
+  width: 70%;
+  margin:0 auto ;
+  padding: 20px 0;
+  border-bottom: 1px solid #969696;
+
+}
+
+
+
+div ul {
+  list-style: none;
+  display: flex; /* Flex布局替代浮动 */
+  flex-wrap: wrap; /* 响应式换行 */
+  justify-content: space-around;
+  gap: 40px; /* 列间距 */
+  padding: 0 20px;
+}
+
+div ul li {
+  flex: 1;
+  min-width: 220px; /* 防止过窄 */
+  padding: 15px;
+  transition: transform 2ms;
+}
+/* 分类导航样式优化 */
+dt {
+  font-weight: 600;
+  /* font-weight 正常是400 加粗是700 或者用关键字正常是normal(400) 粗体是bold(700) 斜体是italic 斜体加粗是bolditalic 细体是lighter */
+  /* color: #2c3e50; */
+  font-size: 1.4em;
+  /*em是相对长度单位 记住谷歌浏览器的默认字体大小是16px，所以要除以16(如果没有设置的话)，才能得到正确的值 (1em表示当前标签の字号大小)*/
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  /* border-bottom: 1px solid #969696; */
+  color: #ffffff;
+}
+
+dd {
+  margin: 8px 0;
+}
+
+dd a {
+  text-decoration: none;
+  /* color: #34495e; */
+  font-size: 0.95em;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 2ms;
+  display: block; /* 扩大点击区域 */
+  color: #969696;
+}
+
+dd a:hover {
+  color: #ef2853;
+  /* background: rgba(122, 238, 234, 0.15); */
+  /* color: #7dc5eb; */
+  /* transform: translateX(5px); */
+}
+
+
+/*页脚*/
+.foot{
+    background-color: #000000;
+    /* margin: 10px; */
+    width: 100vw;
+    height: 80px;
+    float: left;
+    clear: both;
+    text-align: center;
+    margin-bottom: 0px;
+    
+}
+.foot p{
+  margin: 12px;
+  line-height: 10px;
+  color: white;
+}
+
+
+
+.play-section2 {
+  max-width: 800px;
+  margin: 0 auto 60px;
+  padding: 20px;
+  background: rgba(255,255,255,0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.play-section2 .play-title2,#service {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+.play-section2 .play-title2::after,.play-section .play-title::after,#service::after{
+  content: '';
+  width: 60px;
+  height: 4px;
+  background: #E60012;
+  display: block;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+.play-item {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  overflow: hidden;
+  transition: transform .2s;
+  cursor: pointer;
+}
+.play-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(249, 98, 98, 0.5);
+}
+.item-header {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+}
+.item-header img {
+  width: 60px;
+  height: 60px;
+  margin-right: 12px;
+  border-radius: 8px;
+}
+.item-header h3 {
+  font-size: 1.2em;
+  flex: 1;
+}
+.item-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 12px;
+  transition: max-height .3s ease;
+}
+.item-content p {
+  margin: 12px 0;
+  line-height: 1.5;
+  color: #555;
+}
+.item-footer {
+  padding: 8px 12px;
+  text-align: right;
+}
+.item-footer button {
+  background: #E60012;
+  color: #fff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background .2s;
+}
+.item-footer button:hover {
+  background: #C2000F;
+}
+
+
+
+
+/* 1. 容器尺寸：响应式，自适应宽度，高度按 4:3 */
+.hero-carousel {
+  position: relative;
+  max-width: 600px;       /* 不超过 400px */
+  aspect-ratio: auto;    /* 自动计算高度 */
+  height: 80vh;
+  overflow: hidden;
+  margin-left: auto;      /* 右侧对齐 */
+  box-shadow:  0 8px 24px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+/* 2. 轨道切换过渡 */
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: max-content;     /* 宽度随子元素总和 */
+  height: 100%;
+  overflow: hidden;
+}
+
+/* 3. 每张图 */
+.carousel-track img {
+  width: 90%;
+  height:auto;
+  object-fit: contain;
+  /* flex-shrink: 0; */
+  background-color: #f5f9ff;
+  max-width: 100%;
+}
+
+/* 4. 个性化按钮 */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  border: none;
+  font-size: 1.2rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+  z-index: 2;
+}
+.carousel-btn:hover {
+  background: rgba(0, 0, 0, 0.7);
+  transform: translateY(-50%) scale(1.1);
+}
+.carousel-btn.prev { left: 8px; }
+.carousel-btn.next { right: 8px; }
+
+/* 1. 下拉整体容器 */
+.nav-item {
+  position: relative;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+}
+
+.nav-item .dropdown {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) scaleY(0);
+  transform-origin: top center;
+  background: #fff;              /* 白底 */
+  border: 1px solid #ddd;        /* 细浅灰边框 */
+  border-radius: 4px;
+  padding: 0.2rem 0;
+  list-style: none;
+  width: 222px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.25s ease-out, opacity 0.25s ease-out;
+  opacity: 0;
+  z-index: 10;
+}
+
+/* 2. 打开时展开 */
+.nav-item:hover .dropdown,
+.nav-item.open .dropdown {
+  transform: translateX(-50%) scaleY(1);
+  opacity: 1;
+}
+
+/* 3. 列表项与链接 */
+.nav-item .dropdown li {
+  margin: 0;
+}
+
+.nav-item .dropdown li a {
+  display: block;
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+  color: #222;                   /* 深灰/黑 */
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+/* 4. 悬停高亮 */
+.nav-item .dropdown li a:hover {
+  background: #c00;              /* 红色背景 */
+  color: #fff;                   /* 白字 */
+}
+
+/* 5. 取消多余三角指示（如有） */
+.nav-item .dropdown::before {
+  display: none;
+}
+
